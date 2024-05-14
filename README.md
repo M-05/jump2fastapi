@@ -1,5 +1,10 @@
 # jump2fastapi
 
+### 데이터베이스 Schema Design
+<div class="imgContainer" align='center'>
+  <img width="800" alt="dbSchemaDesign" src="https://github.com/M-05/jump2fastapi/assets/103846429/f0c45273-7075-483e-b131-d0413ad71d41">
+</div>
+
 ### 디렉토리 구조
 ```
 ├── domain
@@ -20,12 +25,14 @@
 └── models.py
 ```
 ### FastAPI Docs
-<img width="500" alt="FastAPI Docs1" src="https://github.com/M-05/jump2fastapi/assets/103846429/502dba35-8e47-4df1-8691-4f30ebb98679">
-<img width="487" alt="FastAPI Docs2" src="https://github.com/M-05/jump2fastapi/assets/103846429/40e9f18c-bbd5-4103-b19a-ad799e4f5c5b">
+<div class="docsContainer" align='center'>
+  <img width="500" alt="FastAPI Docs1" src="https://github.com/M-05/jump2fastapi/assets/103846429/502dba35-8e47-4df1-8691-4f30ebb98679">
+  <img width="487" alt="FastAPI Docs2" src="https://github.com/M-05/jump2fastapi/assets/103846429/40e9f18c-bbd5-4103-b19a-ad799e4f5c5b">
+</div>
 
 ### 모델 속성
   
-<div class="container" align='center'>
+<div class="tableContainer" align='center'>
   
 |`Question`|속성명|설명|`Answer`|속성명|설명|`User`|속성명|설명|
 |--|--|--|--|--|--|--|--|--|
@@ -42,6 +49,8 @@
 
 ### API 명세
 
+<div class="apiContainer" align='center'>
+  
 |`Question`|API명|URL|요청방법|설명|
 |--|--|--|--|--|
 | |질문 상세조회|/api/question/detail/detail/{question_id}|get|질문 상세 내역 조회|
@@ -62,6 +71,8 @@
 |--|--|--|--|--|
 | |회원 가입|/api/user/create|post|회원 등록|
 | |로그인|/api/user/login|post|로그인|
+
+</div>
 
 > 로그인 API 출력 항목
 - access_token : 접근 토큰
