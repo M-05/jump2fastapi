@@ -79,7 +79,6 @@ def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(),
         "access_token": access_token,
         "token_type": "bearer",
         "username": user.username
-
     }
 
 def get_current_user(token: str = Depends(oauth2_schema), # OAuth2PasswordBearer(tokenUrl="/api/user/login")
