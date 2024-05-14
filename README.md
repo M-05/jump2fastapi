@@ -26,8 +26,8 @@
 ```
 ### FastAPI Docs
 <div class="docsContainer" align='center'>
-  <img width="500" alt="FastAPI Docs1" src="https://github.com/M-05/jump2fastapi/assets/103846429/502dba35-8e47-4df1-8691-4f30ebb98679">
-  <img width="487" alt="FastAPI Docs2" src="https://github.com/M-05/jump2fastapi/assets/103846429/40e9f18c-bbd5-4103-b19a-ad799e4f5c5b">
+  <img width="390" alt="FastAPI Docs1" src="https://github.com/M-05/jump2fastapi/assets/103846429/502dba35-8e47-4df1-8691-4f30ebb98679">
+  <img width="380" alt="FastAPI Docs2" src="https://github.com/M-05/jump2fastapi/assets/103846429/40e9f18c-bbd5-4103-b19a-ad799e4f5c5b">
 </div>
 
 ### 모델 속성
