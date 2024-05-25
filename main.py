@@ -5,7 +5,6 @@ from starlette.middleware.cors import CORSMiddleware
 from domain.question import question_router
 from domain.answer import answer_router
 from domain.user import user_router
-
 # import models
 # from database import engine
 # models.Base.metadata.create_all(bind=engine)

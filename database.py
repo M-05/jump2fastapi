@@ -1,6 +1,5 @@
 # 데이터베이스를 사용하기 위한 변수, 함수등을 정의하고 접속할 데이터베이스의 주소와 사용자, 비밀번호등을 관리한다
 # import contextlib
-
 from sqlalchemy import create_engine, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -24,6 +23,7 @@ naming_convention = {
 }
 Base.metadata = MetaData(naming_convention=naming_convention)
 
+
 # 대부분의 API는 데이터베이스를 사용해야 하기 때문에 이러한 패턴이 반복될 것이다.
 # FastAPI의 "Dependency Injection"을 사용하면 이 부분을 깔끔하게 처리
 # @contextlib.contextmanager
@@ -33,4 +33,5 @@ def get_db():
         yield db
     finally:
         db.close()
-    # db 세션 객체를 생성한 후에 db.close()를 수행하지 않으면 SQLAlchemy가 사용하는 컨넥션 풀에 db 세션이 반환되지 않아 문제가 생긴다.
+    # db 세션 객체를 생성한 후에 db.close()를 수행하지 않으면
+    # SQLAlchemy가 사용하는 컨넥션 풀에 db 세션이 반환되지 않아 문제가 생긴다.

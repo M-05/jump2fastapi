@@ -1,7 +1,8 @@
 import datetime
-
 from pydantic import BaseModel, field_validator
+
 from domain.user import user_schema
+
 
 class AnswerCreate(BaseModel):
     content: str
@@ -12,6 +13,7 @@ class AnswerCreate(BaseModel):
             raise ValueError('빈 값은 허용되지 않습니다.')
         return v
 
+
 class Answer(BaseModel):
     id: int
     content: str
@@ -20,14 +22,18 @@ class Answer(BaseModel):
     question_id: int
     modify_date: datetime.datetime | None = None
     voter: list[user_schema.User] = []
+
+
 ###################################
 # Update(AnswerCreate(BaseModel))
 ###################################
 class AnswerUpdate(AnswerCreate):
     answer_id: int
 
+
 class AnswerDelete(BaseModel):
     answer_id: int
+
 
 class AnswerVote(BaseModel):
     answer_id: int
